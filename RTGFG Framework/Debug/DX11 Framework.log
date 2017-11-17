@@ -1,3 +1,859 @@
 ﻿  Application.cpp
-  DX11 Framework.vcxproj -> C:\Users\FABIEN\Documents\staffs-uni\real-time-graphics-for-game\RTGFG Framework\Debug\DX11 Framework.exe
-  DX11 Framework.vcxproj -> C:\Users\FABIEN\Documents\staffs-uni\real-time-graphics-for-game\RTGFG Framework\Debug\DX11 Framework.pdb (Full PDB)
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt.h(176): warning C4668: 'WINAPI_PARTITION_SYSTEM' non défini(e) comme préprocesseur ou macro, remplacement par '0' pour '#if/#elif'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(10997): warning C4820: '_CLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE' : '4' octets de remplissage ajoutés après données membres '_CLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE::Name'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(11238): warning C4820: '_SECURITY_QUALITY_OF_SERVICE' : '2' octets de remplissage ajoutés après données membres '_SECURITY_QUALITY_OF_SERVICE::EffectiveOnly'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(11249): warning C4820: '_SE_IMPERSONATION_STATE' : '2' octets de remplissage ajoutés après données membres '_SE_IMPERSONATION_STATE::EffectiveOnly'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(11451): warning C4820: '_QUOTA_LIMITS' : '4' octets de remplissage ajoutés après données membres '_QUOTA_LIMITS::PagefileLimit'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(11474): warning C4820: '_QUOTA_LIMITS_EX' : '4' octets de remplissage ajoutés après données membres '_QUOTA_LIMITS_EX::PagefileLimit'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(11541): warning C4820: '_PROCESS_MITIGATION_DEP_POLICY' : '3' octets de remplissage ajoutés après données membres '_PROCESS_MITIGATION_DEP_POLICY::Permanent'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(11617): warning C4820: '_JOBOBJECT_BASIC_LIMIT_INFORMATION' : '4' octets de remplissage ajoutés après données membres '_JOBOBJECT_BASIC_LIMIT_INFORMATION::SchedulingClass'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(11688): warning C4820: '_JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION' : '4' octets de remplissage ajoutés après données membres '_JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION::LimitFlags'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(12334): warning C4820: '_FILE_NOTIFY_INFORMATION' : '2' octets de remplissage ajoutés après données membres '_FILE_NOTIFY_INFORMATION::FileName'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(12409): warning C4820: '_REPARSE_GUID_DATA_BUFFER' : '3' octets de remplissage ajoutés après données membres '_REPARSE_GUID_DATA_BUFFER::GenericReparseBuffer'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(12621): warning C4820: '_SCRUB_DATA_OUTPUT' : '4' octets de remplissage ajoutés après données membres '_SCRUB_DATA_OUTPUT::Status'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14075): warning C4820: '_POWER_SESSION_RIT_STATE' : '3' octets de remplissage ajoutés après données membres '_POWER_SESSION_RIT_STATE::Active'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14085): warning C4820: '_POWER_SESSION_WINLOGON' : '2' octets de remplissage ajoutés après données membres '_POWER_SESSION_WINLOGON::Locked'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14125): warning C4820: '_POWER_MONITOR_INVOCATION' : '2' octets de remplissage ajoutés après données membres '_POWER_MONITOR_INVOCATION::Console'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14134): warning C4820: '_RESUME_PERFORMANCE' : '4' octets de remplissage ajoutés après données membres '_RESUME_PERFORMANCE::PostTimeMs'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14179): warning C4820: '<unnamed-tag>' : '3' octets de remplissage ajoutés après données membres '<unnamed-tag>::Data'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14312): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::DecreaseTime'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14333): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::TimerInterval'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14378): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::InvalidBucketIndex'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14386): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::ResetCount'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14401): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::Count'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14534): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::Speed'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14545): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::ThermalConstraint'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14553): warning C4820: '<unnamed-tag>' : '7' octets de remplissage ajoutés après données membres '<unnamed-tag>::Mode'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(14650): warning C4820: '_SYSTEM_POWER_POLICY' : '3' octets de remplissage ajoutés après données membres '_SYSTEM_POWER_POLICY::VideoDimDisplay'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(16169): warning C4820: '_IMAGE_IMPORT_BY_NAME' : '1' octets de remplissage ajoutés après données membres '_IMAGE_IMPORT_BY_NAME::Name'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(16398): warning C4820: '_IMAGE_RESOURCE_DIRECTORY_STRING' : '1' octets de remplissage ajoutés après données membres '_IMAGE_RESOURCE_DIRECTORY_STRING::NameString'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(16656): warning C4820: '_IMAGE_DEBUG_MISC' : '3' octets de remplissage ajoutés après données membres '_IMAGE_DEBUG_MISC::Data'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(17842): warning C4820: '_MESSAGE_RESOURCE_ENTRY' : '1' octets de remplissage ajoutés après données membres '_MESSAGE_RESOURCE_ENTRY::Text'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(18349): warning C4820: '_ACTIVATION_CONTEXT_ASSEMBLY_DETAILED_INFORMATION' : '4' octets de remplissage ajoutés après données membres '_ACTIVATION_CONTEXT_ASSEMBLY_DETAILED_INFORMATION::ulFileCount'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(18858): warning C4820: '_TAPE_ERASE' : '3' octets de remplissage ajoutés après données membres '_TAPE_ERASE::Immediate'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(18874): warning C4820: '_TAPE_PREPARE' : '3' octets de remplissage ajoutés après données membres '_TAPE_PREPARE::Immediate'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(18889): warning C4820: '_TAPE_WRITE_MARKS' : '3' octets de remplissage ajoutés après données membres '_TAPE_WRITE_MARKS::Immediate'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(18925): warning C4820: '_TAPE_SET_POSITION' : '7' octets de remplissage ajoutés après données membres '_TAPE_SET_POSITION::Immediate'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(19049): warning C4820: '_TAPE_GET_MEDIA_PARAMETERS' : '7' octets de remplissage ajoutés après données membres '_TAPE_GET_MEDIA_PARAMETERS::WriteProtected'
+c:\program files (x86)\windows kits\8.1\include\shared\ktmtypes.h(138): warning C4820: '_TRANSACTION_NOTIFICATION' : '4' octets de remplissage ajoutés après données membres '_TRANSACTION_NOTIFICATION::ArgumentLength'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(19314): warning C4820: '_TRANSACTIONMANAGER_LOGPATH_INFORMATION' : '2' octets de remplissage ajoutés après données membres '_TRANSACTIONMANAGER_LOGPATH_INFORMATION::LogPath'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(19336): warning C4820: '_TRANSACTION_PROPERTIES_INFORMATION' : '6' octets de remplissage ajoutés après données membres '_TRANSACTION_PROPERTIES_INFORMATION::Description'
+c:\program files (x86)\windows kits\8.1\include\um\winnt.h(19363): warning C4820: '_RESOURCEMANAGER_BASIC_INFORMATION' : '2' octets de remplissage ajoutés après données membres '_RESOURCEMANAGER_BASIC_INFORMATION::Description'
+c:\program files (x86)\windows kits\8.1\include\um\minwinbase.h(117): warning C4820: '_WIN32_FIND_DATAA' : '2' octets de remplissage ajoutés après données membres '_WIN32_FIND_DATAA::cAlternateFileName'
+c:\program files (x86)\windows kits\8.1\include\um\minwinbase.h(300): warning C4820: '_CREATE_PROCESS_DEBUG_INFO' : '2' octets de remplissage ajoutés après données membres '_CREATE_PROCESS_DEBUG_INFO::fUnicode'
+c:\program files (x86)\windows kits\8.1\include\um\minwinbase.h(317): warning C4820: '_LOAD_DLL_DEBUG_INFO' : '2' octets de remplissage ajoutés après données membres '_LOAD_DLL_DEBUG_INFO::fUnicode'
+c:\program files (x86)\windows kits\8.1\include\um\processthreadsapi.h(1170): warning C4668: '_WIN32_WINNT_WINTHRESHOLD' non défini(e) comme préprocesseur ou macro, remplacement par '0' pour '#if/#elif'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(422): warning C4820: '_COMMPROP' : '2' octets de remplissage ajoutés après données membres '_COMMPROP::wcProvChar'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(508): warning C4820: '_COMMCONFIG' : '2' octets de remplissage ajoutés après données membres '_COMMCONFIG::wcProviderData'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(2906): warning C4820: '_WIN32_STREAM_ID' : '2' octets de remplissage ajoutés après données membres '_WIN32_STREAM_ID::cStreamName'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(7294): warning C4820: 'tagHW_PROFILE_INFOA' : '1' octets de remplissage ajoutés après données membres 'tagHW_PROFILE_INFOA::szHwProfileName'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(7299): warning C4820: 'tagHW_PROFILE_INFOW' : '2' octets de remplissage ajoutés après données membres 'tagHW_PROFILE_INFOW::szHwProfileName'
+c:\program files (x86)\windows kits\8.1\include\um\timezoneapi.h(67): warning C4820: '_TIME_DYNAMIC_ZONE_INFORMATION' : '3' octets de remplissage ajoutés après données membres '_TIME_DYNAMIC_ZONE_INFORMATION::DynamicDaylightTimeDisabled'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(8199): warning C4820: '_FILE_BASIC_INFO' : '4' octets de remplissage ajoutés après données membres '_FILE_BASIC_INFO::FileAttributes'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(8207): warning C4820: '_FILE_STANDARD_INFO' : '2' octets de remplissage ajoutés après données membres '_FILE_STANDARD_INFO::Directory'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(8212): warning C4820: '_FILE_NAME_INFO' : '2' octets de remplissage ajoutés après données membres '_FILE_NAME_INFO::FileName'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(8216): warning C4820: '_FILE_RENAME_INFO' : '3' octets de remplissage ajoutés après données membres '_FILE_RENAME_INFO::ReplaceIfExists'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(8219): warning C4820: '_FILE_RENAME_INFO' : '2' octets de remplissage ajoutés après données membres '_FILE_RENAME_INFO::FileName'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(8235): warning C4820: '_FILE_STREAM_INFO' : '6' octets de remplissage ajoutés après données membres '_FILE_STREAM_INFO::StreamName'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(8268): warning C4820: '_FILE_ID_BOTH_DIR_INFO' : '1' octets de remplissage ajoutés après données membres '_FILE_ID_BOTH_DIR_INFO::ShortNameLength'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(8269): warning C4820: '_FILE_ID_BOTH_DIR_INFO' : '2' octets de remplissage ajoutés après données membres '_FILE_ID_BOTH_DIR_INFO::ShortName'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(8271): warning C4820: '_FILE_ID_BOTH_DIR_INFO' : '6' octets de remplissage ajoutés après données membres '_FILE_ID_BOTH_DIR_INFO::FileName'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(8286): warning C4820: '_FILE_FULL_DIR_INFO' : '2' octets de remplissage ajoutés après données membres '_FILE_FULL_DIR_INFO::FileName'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(8362): warning C4820: '_FILE_ID_EXTD_DIR_INFO' : '6' octets de remplissage ajoutés après données membres '_FILE_ID_EXTD_DIR_INFO::FileName'
+c:\program files (x86)\windows kits\8.1\include\um\winbase.h(8618): warning C4668: 'NTDDI_WIN7SP1' non défini(e) comme préprocesseur ou macro, remplacement par '0' pour '#if/#elif'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(923): warning C4820: 'tagBITMAPCOREINFO' : '1' octets de remplissage ajoutés après données membres 'tagBITMAPCOREINFO::bmciColors'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(1165): warning C4820: 'tagTEXTMETRICA' : '3' octets de remplissage ajoutés après données membres 'tagTEXTMETRICA::tmCharSet'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(1188): warning C4820: 'tagTEXTMETRICW' : '3' octets de remplissage ajoutés après données membres 'tagTEXTMETRICW::tmCharSet'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(1248): warning C4820: 'tagNEWTEXTMETRICA' : '3' octets de remplissage ajoutés après données membres 'tagNEWTEXTMETRICA::tmCharSet'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(1275): warning C4820: 'tagNEWTEXTMETRICW' : '3' octets de remplissage ajoutés après données membres 'tagNEWTEXTMETRICW::tmCharSet'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(1336): warning C4820: 'tagPELARRAY' : '3' octets de remplissage ajoutés après données membres 'tagPELARRAY::paRGBs'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(1810): warning C4820: 'tagEXTLOGFONTA' : '2' octets de remplissage ajoutés après données membres 'tagEXTLOGFONTA::elfPanose'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(1822): warning C4820: 'tagEXTLOGFONTW' : '2' octets de remplissage ajoutés après données membres 'tagEXTLOGFONTW::elfPanose'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(3050): warning C4820: 'DISPLAYCONFIG_TARGET_PREFERRED_MODE' : '4' octets de remplissage ajoutés après données membres 'DISPLAYCONFIG_TARGET_PREFERRED_MODE::height'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(3132): warning C4820: '_RGNDATA' : '3' octets de remplissage ajoutés après données membres '_RGNDATA::Buffer'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(3174): warning C4820: '_OUTLINETEXTMETRICA' : '1' octets de remplissage ajoutés après données membres '_OUTLINETEXTMETRICA::otmPanoseNumber'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(3208): warning C4820: '_OUTLINETEXTMETRICW' : '1' octets de remplissage ajoutés après données membres '_OUTLINETEXTMETRICW::otmPanoseNumber'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5428): warning C4820: 'tagEMRGDICOMMENT' : '3' octets de remplissage ajoutés après données membres 'tagEMRGDICOMMENT::Data'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5587): warning C4820: 'tagEMRPOLYDRAW' : '3' octets de remplissage ajoutés après données membres 'tagEMRPOLYDRAW::abTypes'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5596): warning C4820: 'tagEMRPOLYDRAW16' : '3' octets de remplissage ajoutés après données membres 'tagEMRPOLYDRAW16::abTypes'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5626): warning C4820: 'tagEMRINVERTRGN' : '3' octets de remplissage ajoutés après données membres 'tagEMRINVERTRGN::RgnData'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5636): warning C4820: 'tagEMRFILLRGN' : '3' octets de remplissage ajoutés après données membres 'tagEMRFILLRGN::RgnData'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5646): warning C4820: 'tagEMRFRAMERGN' : '3' octets de remplissage ajoutés après données membres 'tagEMRFRAMERGN::RgnData'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5654): warning C4820: 'tagEMREXTSELECTCLIPRGN' : '3' octets de remplissage ajoutés après données membres 'tagEMREXTSELECTCLIPRGN::RgnData'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5901): warning C4820: 'tagEMRGLSRECORD' : '3' octets de remplissage ajoutés après données membres 'tagEMRGLSRECORD::Data'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5909): warning C4820: 'tagEMRGLSBOUNDEDRECORD' : '3' octets de remplissage ajoutés après données membres 'tagEMRGLSBOUNDEDRECORD::Data'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5942): warning C4820: 'tagEMREXTESCAPE' : '3' octets de remplissage ajoutés après données membres 'tagEMREXTESCAPE::EscData'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5952): warning C4820: 'tagEMRNAMEDESCAPE' : '3' octets de remplissage ajoutés après données membres 'tagEMRNAMEDESCAPE::EscData'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5963): warning C4820: 'tagEMRSETICMPROFILE' : '3' octets de remplissage ajoutés après données membres 'tagEMRSETICMPROFILE::Data'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5977): warning C4820: 'tagEMRCREATECOLORSPACEW' : '3' octets de remplissage ajoutés après données membres 'tagEMRCREATECOLORSPACEW::Data'
+c:\program files (x86)\windows kits\8.1\include\um\wingdi.h(5989): warning C4820: 'tagCOLORMATCHTOTARGET' : '3' octets de remplissage ajoutés après données membres 'tagCOLORMATCHTOTARGET::Data'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(2261): warning C4820: '<unnamed-tag>' : '3' octets de remplissage ajoutés après données membres '<unnamed-tag>::Data'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(3064): warning C4820: 'tagACCEL' : '1' octets de remplissage ajoutés après données membres 'tagACCEL::fVirt'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6053): warning C4820: 'tagPOINTER_INFO' : '4' octets de remplissage ajoutés après données membres 'tagPOINTER_INFO::ButtonChangeType'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6321): warning C4820: 'tagTOUCH_HIT_TESTING_PROXIMITY_EVALUATION' : '2' octets de remplissage ajoutés après données membres 'tagTOUCH_HIT_TESTING_PROXIMITY_EVALUATION::score'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10229): warning C4820: 'tagCURSORSHAPE' : '2' octets de remplissage ajoutés après données membres 'tagCURSORSHAPE::BitsPixel'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10352): warning C4820: '_ICONINFOEXA' : '2' octets de remplissage ajoutés après données membres '_ICONINFOEXA::szResName'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10363): warning C4820: '_ICONINFOEXW' : '2' octets de remplissage ajoutés après données membres '_ICONINFOEXW::szResName'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(11617): warning C4820: 'tagMULTIKEYHELPA' : '2' octets de remplissage ajoutés après données membres 'tagMULTIKEYHELPA::szKeyphrase'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(11645): warning C4820: 'tagHELPWININFOA' : '2' octets de remplissage ajoutés après données membres 'tagHELPWININFOA::rgchMember'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(14157): warning C4820: 'tagRAWMOUSE' : '2' octets de remplissage ajoutés après données membres 'tagRAWMOUSE::usFlags'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(14288): warning C4820: 'tagRAWHID' : '3' octets de remplissage ajoutés après données membres 'tagRAWHID::bRawData'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(14557): warning C4820: 'tagPOINTER_DEVICE_INFO' : '2' octets de remplissage ajoutés après données membres 'tagPOINTER_DEVICE_INFO::productString'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(14771): warning C4820: 'tagGESTUREINFO' : '4' octets de remplissage ajoutés après données membres 'tagGESTUREINFO::dwSequenceID'
+c:\program files (x86)\windows kits\8.1\include\um\winuser.h(14773): warning C4820: 'tagGESTUREINFO' : '4' octets de remplissage ajoutés après données membres 'tagGESTUREINFO::cbExtraArgs'
+c:\program files (x86)\windows kits\8.1\include\um\winnls.h(961): warning C4820: '_cpinfo' : '2' octets de remplissage ajoutés après données membres '_cpinfo::LeadByte'
+c:\program files (x86)\windows kits\8.1\include\um\wincon.h(145): warning C4820: '_INPUT_RECORD' : '2' octets de remplissage ajoutés après données membres '_INPUT_RECORD::EventType'
+c:\program files (x86)\windows kits\8.1\include\um\winnetwk.h(667): warning C4820: '_NETINFOSTRUCT' : '2' octets de remplissage ajoutés après données membres '_NETINFOSTRUCT::wNetType'
+c:\program files (x86)\windows kits\8.1\include\um\dde.h(107): warning C4820: '<unnamed-tag>' : '1' octets de remplissage ajoutés après données membres '<unnamed-tag>::Value'
+c:\program files (x86)\windows kits\8.1\include\um\dde.h(132): warning C4820: '<unnamed-tag>' : '1' octets de remplissage ajoutés après données membres '<unnamed-tag>::Value'
+c:\program files (x86)\windows kits\8.1\include\um\dde.h(168): warning C4820: '<unnamed-tag>' : '1' octets de remplissage ajoutés après données membres '<unnamed-tag>::rgb'
+c:\program files (x86)\windows kits\8.1\include\um\ddeml.h(578): warning C4820: 'tagMONHSZSTRUCTA' : '3' octets de remplissage ajoutés après données membres 'tagMONHSZSTRUCTA::str'
+c:\program files (x86)\windows kits\8.1\include\um\ddeml.h(586): warning C4820: 'tagMONHSZSTRUCTW' : '2' octets de remplissage ajoutés après données membres 'tagMONHSZSTRUCTW::str'
+c:\program files (x86)\windows kits\8.1\include\shared\rpcdce.h(2418): warning C4820: '<unnamed-tag>' : '2' octets de remplissage ajoutés après données membres '<unnamed-tag>::Privilege'
+c:\program files (x86)\windows kits\8.1\include\shared\rpcdcep.h(1020): warning C4820: '_RDR_CALLOUT_STATE' : '1' octets de remplissage ajoutés après données membres '_RDR_CALLOUT_STATE::InterfacePresent'
+c:\program files (x86)\windows kits\8.1\include\shared\rpcasync.h(252): warning C4820: 'tagBinaryParam' : '2' octets de remplissage ajoutés après données membres 'tagBinaryParam::Size'
+c:\program files (x86)\windows kits\8.1\include\shared\rpcasync.h(265): warning C4820: 'tagRPC_EE_INFO_PARAM' : '4' octets de remplissage ajoutés après données membres 'tagRPC_EE_INFO_PARAM::ParameterType'
+c:\program files (x86)\windows kits\8.1\include\shared\rpcasync.h(296): warning C4820: 'tagRPC_EXTENDED_ERROR_INFO' : '4' octets de remplissage ajoutés après données membres 'tagRPC_EXTENDED_ERROR_INFO::NumberOfParameters'
+c:\program files (x86)\windows kits\8.1\include\shared\rpcasync.h(530): warning C4820: 'tagRPC_CALL_ATTRIBUTES_V2_W' : '2' octets de remplissage ajoutés après données membres 'tagRPC_CALL_ATTRIBUTES_V2_W::OpNum'
+c:\program files (x86)\windows kits\8.1\include\shared\rpcasync.h(552): warning C4820: 'tagRPC_CALL_ATTRIBUTES_V2_A' : '2' octets de remplissage ajoutés après données membres 'tagRPC_CALL_ATTRIBUTES_V2_A::OpNum'
+c:\program files (x86)\windows kits\8.1\include\shared\rpcasync.h(576): warning C4820: 'tagRPC_CALL_ATTRIBUTES_V3_W' : '2' octets de remplissage ajoutés après données membres 'tagRPC_CALL_ATTRIBUTES_V3_W::OpNum'
+c:\program files (x86)\windows kits\8.1\include\shared\rpcasync.h(600): warning C4820: 'tagRPC_CALL_ATTRIBUTES_V3_A' : '2' octets de remplissage ajoutés après données membres 'tagRPC_CALL_ATTRIBUTES_V3_A::OpNum'
+c:\program files (x86)\windows kits\8.1\include\um\shellapi.h(1696): warning C4820: 'tagNC_ADDRESS' : '1' octets de remplissage ajoutés après données membres 'tagNC_ADDRESS::PrefixLength'
+c:\program files (x86)\windows kits\8.1\include\um\winperf.h(81): warning C4820: '_PERF_DATA_BLOCK' : '4' octets de remplissage ajoutés après données membres '_PERF_DATA_BLOCK::SystemTime'
+c:\program files (x86)\windows kits\8.1\include\um\winsock.h(176): warning C4820: 'netent' : '2' octets de remplissage ajoutés après données membres 'netent::n_addrtype'
+c:\program files (x86)\windows kits\8.1\include\um\winsock.h(187): warning C4820: 'servent' : '2' octets de remplissage ajoutés après données membres 'servent::s_port'
+c:\program files (x86)\windows kits\8.1\include\um\winsock.h(195): warning C4820: 'protoent' : '2' octets de remplissage ajoutés après données membres 'protoent::p_proto'
+c:\program files (x86)\windows kits\8.1\include\um\winsock.h(328): warning C4820: 'WSAData' : '2' octets de remplissage ajoutés après données membres 'WSAData::iMaxUdpDg'
+c:\program files (x86)\windows kits\8.1\include\shared\bcrypt.h(207): warning C4820: '_BCRYPT_AUTHENTICATED_CIPHER_MODE_INFO' : '4' octets de remplissage ajoutés après données membres '_BCRYPT_AUTHENTICATED_CIPHER_MODE_INFO::cbAAD'
+c:\program files (x86)\windows kits\8.1\include\shared\bcrypt.h(209): warning C4820: '_BCRYPT_AUTHENTICATED_CIPHER_MODE_INFO' : '4' octets de remplissage ajoutés après données membres '_BCRYPT_AUTHENTICATED_CIPHER_MODE_INFO::dwFlags'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypesbase.h(422): warning C4820: '_BYTE_BLOB' : '3' octets de remplissage ajoutés après données membres '_BYTE_BLOB::abData'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypesbase.h(430): warning C4820: '_WORD_BLOB' : '2' octets de remplissage ajoutés après données membres '_WORD_BLOB::asData'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypesbase.h(447): warning C4820: '_FLAGGED_BYTE_BLOB' : '3' octets de remplissage ajoutés après données membres '_FLAGGED_BYTE_BLOB::abData'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypesbase.h(456): warning C4820: '_FLAGGED_WORD_BLOB' : '2' octets de remplissage ajoutés après données membres '_FLAGGED_WORD_BLOB::asData'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypes.h(75): warning C4820: 'tagRemHGLOBAL' : '3' octets de remplissage ajoutés après données membres 'tagRemHGLOBAL::data'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypes.h(84): warning C4820: 'tagRemHMETAFILEPICT' : '3' octets de remplissage ajoutés après données membres 'tagRemHMETAFILEPICT::data'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypes.h(90): warning C4820: 'tagRemHENHMETAFILE' : '3' octets de remplissage ajoutés après données membres 'tagRemHENHMETAFILE::data'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypes.h(96): warning C4820: 'tagRemHBITMAP' : '3' octets de remplissage ajoutés après données membres 'tagRemHBITMAP::data'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypes.h(102): warning C4820: 'tagRemHPALETTE' : '3' octets de remplissage ajoutés après données membres 'tagRemHPALETTE::data'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypes.h(108): warning C4820: 'tagRemBRUSH' : '3' octets de remplissage ajoutés après données membres 'tagRemBRUSH::data'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypes.h(427): warning C4820: '_userHGLOBAL' : '4' octets de remplissage ajoutés après données membres '_userHGLOBAL::fContext'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypes.h(440): warning C4820: '_userHMETAFILE' : '4' octets de remplissage ajoutés après données membres '_userHMETAFILE::fContext'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypes.h(459): warning C4820: '_userHMETAFILEPICT' : '4' octets de remplissage ajoutés après données membres '_userHMETAFILEPICT::fContext'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypes.h(470): warning C4820: '_userHENHMETAFILE' : '4' octets de remplissage ajoutés après données membres '_userHENHMETAFILE::fContext'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypes.h(483): warning C4820: '_userBITMAP' : '3' octets de remplissage ajoutés après données membres '_userBITMAP::pBuffer'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypes.h(493): warning C4820: '_userHBITMAP' : '4' octets de remplissage ajoutés après données membres '_userHBITMAP::fContext'
+c:\program files (x86)\windows kits\8.1\include\shared\wtypes.h(504): warning C4820: '_userHPALETTE' : '4' octets de remplissage ajoutés après données membres '_userHPALETTE::fContext'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(496): warning C4820: '_TAPE_STATISTICS' : '6' octets de remplissage ajoutés après données membres '_TAPE_STATISTICS::CompressionRatioWrites'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(704): warning C4820: '_DEVICE_MEDIA_INFO::<unnamed-tag>' : '2' octets de remplissage ajoutés après données membres '_DEVICE_MEDIA_INFO::<unnamed-tag>::BusSpecificData'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(835): warning C4820: '_STORAGE_PROPERTY_QUERY' : '3' octets de remplissage ajoutés après données membres '_STORAGE_PROPERTY_QUERY::AdditionalParameters'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(950): warning C4820: '_STORAGE_DEVICE_DESCRIPTOR' : '3' octets de remplissage ajoutés après données membres '_STORAGE_DEVICE_DESCRIPTOR::RawDeviceProperties'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(987): warning C4820: '_STORAGE_ADAPTER_DESCRIPTOR' : '1' octets de remplissage ajoutés après données membres '_STORAGE_ADAPTER_DESCRIPTOR::BusType'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(1187): warning C4820: '_STORAGE_IDENTIFIER' : '3' octets de remplissage ajoutés après données membres '_STORAGE_IDENTIFIER::Identifier'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(1208): warning C4820: '_STORAGE_DEVICE_ID_DESCRIPTOR' : '3' octets de remplissage ajoutés après données membres '_STORAGE_DEVICE_ID_DESCRIPTOR::Identifiers'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(1216): warning C4820: '_DEVICE_SEEK_PENALTY_DESCRIPTOR' : '3' octets de remplissage ajoutés après données membres '_DEVICE_SEEK_PENALTY_DESCRIPTOR::IncursSeekPenalty'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(1224): warning C4820: '_DEVICE_WRITE_AGGREGATION_DESCRIPTOR' : '3' octets de remplissage ajoutés après données membres '_DEVICE_WRITE_AGGREGATION_DESCRIPTOR::BenefitsFromWriteAggregation'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(1232): warning C4820: '_DEVICE_TRIM_DESCRIPTOR' : '3' octets de remplissage ajoutés après données membres '_DEVICE_TRIM_DESCRIPTOR::TrimEnabled'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(1705): warning C4820: '_DEVICE_DATA_SET_LB_PROVISIONING_STATE_V2' : '4' octets de remplissage ajoutés après données membres '_DEVICE_DATA_SET_LB_PROVISIONING_STATE_V2::SlabAllocationBitMap'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(1719): warning C4820: '_STORAGE_OFFLOAD_READ_OUTPUT' : '4' octets de remplissage ajoutés après données membres '_STORAGE_OFFLOAD_READ_OUTPUT::Token'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(1929): warning C4820: '_STORAGE_ALLOCATE_BC_STREAM_OUTPUT' : '4' octets de remplissage ajoutés après données membres '_STORAGE_ALLOCATE_BC_STREAM_OUTPUT::NumOutStandingRequests'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(2013): warning C4820: '_STORAGE_READ_CAPACITY' : '4' octets de remplissage ajoutés après données membres '_STORAGE_READ_CAPACITY::BlockLength'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(2106): warning C4820: '_STORAGE_WRITE_CACHE_PROPERTY' : '1' octets de remplissage ajoutés après données membres '_STORAGE_WRITE_CACHE_PROPERTY::NVCacheEnabled'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(2136): warning C4820: '_PERSISTENT_RESERVE_COMMAND::<unnamed-tag>' : '1' octets de remplissage ajoutés après données membres '_PERSISTENT_RESERVE_COMMAND::<unnamed-tag>::Reserved1'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(2945): warning C4820: '_FORMAT_EX_PARAMETERS' : '2' octets de remplissage ajoutés après données membres '_FORMAT_EX_PARAMETERS::SectorNumber'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(2985): warning C4820: '_PARTITION_INFORMATION' : '4' octets de remplissage ajoutés après données membres '_PARTITION_INFORMATION::RewritePartition'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3016): warning C4820: '_VERIFY_INFORMATION' : '4' octets de remplissage ajoutés après données membres '_VERIFY_INFORMATION::Length'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3102): warning C4820: '_PARTITION_INFORMATION_MBR' : '1' octets de remplissage ajoutés après données membres '_PARTITION_INFORMATION_MBR::RecognizedPartition'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3123): warning C4820: '_SET_PARTITION_INFORMATION_EX' : '4' octets de remplissage ajoutés après données membres '_SET_PARTITION_INFORMATION_EX::PartitionStyle'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3174): warning C4820: '_PARTITION_INFORMATION_EX' : '4' octets de remplissage ajoutés après données membres '_PARTITION_INFORMATION_EX::PartitionStyle'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3181): warning C4820: '_PARTITION_INFORMATION_EX' : '3' octets de remplissage ajoutés après données membres '_PARTITION_INFORMATION_EX::RewritePartition'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3194): warning C4820: '_DRIVE_LAYOUT_INFORMATION_GPT' : '4' octets de remplissage ajoutés après données membres '_DRIVE_LAYOUT_INFORMATION_GPT::MaxPartitionCount'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3239): warning C4820: '_DISK_INT13_INFO' : '2' octets de remplissage ajoutés après données membres '_DISK_INT13_INFO::DriveSelect'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3243): warning C4820: '_DISK_INT13_INFO' : '2' octets de remplissage ajoutés après données membres '_DISK_INT13_INFO::NumberDrives'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3254): warning C4820: '_DISK_EX_INT13_INFO' : '4' octets de remplissage ajoutés après données membres '_DISK_EX_INT13_INFO::ExReserved'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3328): warning C4820: '_DISK_GEOMETRY_EX' : '7' octets de remplissage ajoutés après données membres '_DISK_GEOMETRY_EX::Data'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3407): warning C4820: '_DISK_CACHE_INFORMATION' : '1' octets de remplissage ajoutés après données membres '_DISK_CACHE_INFORMATION::WriteCacheEnabled'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3450): warning C4820: '_DISK_CACHE_INFORMATION' : '1' octets de remplissage ajoutés après données membres '_DISK_CACHE_INFORMATION::PrefetchScalar'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3452): warning C4820: '_DISK_CACHE_INFORMATION' : '2' octets de remplissage ajoutés après données membres '<alignment member>'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3463): warning C4820: '_DISK_GROW_PARTITION' : '4' octets de remplissage ajoutés après données membres '_DISK_GROW_PARTITION::PartitionNumber'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3504): warning C4820: '_DISK_HISTOGRAM' : '4' octets de remplissage ajoutés après données membres '_DISK_HISTOGRAM::Histogram'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3541): warning C4820: '_DISK_PERFORMANCE' : '4' octets de remplissage ajoutés après données membres '_DISK_PERFORMANCE::StorageManagerName'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3557): warning C4820: '_DISK_RECORD' : '6' octets de remplissage ajoutés après données membres '_DISK_RECORD::ReadRequest'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3566): warning C4820: '_DISK_LOGGING' : '3' octets de remplissage ajoutés après données membres '_DISK_LOGGING::Function'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3637): warning C4820: '_BIN_COUNT' : '4' octets de remplissage ajoutés après données membres '_BIN_COUNT::BinCount'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(3645): warning C4820: '_BIN_RESULTS' : '4' octets de remplissage ajoutés après données membres '_BIN_RESULTS::NumberOfBins'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(4230): warning C4820: '_CHANGER_READ_ELEMENT_STATUS' : '3' octets de remplissage ajoutés après données membres '_CHANGER_READ_ELEMENT_STATUS::VolumeTagInfo'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(4430): warning C4820: '_CHANGER_INITIALIZE_ELEMENT_STATUS' : '3' octets de remplissage ajoutés après données membres '_CHANGER_INITIALIZE_ELEMENT_STATUS::BarCodeScan'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(4457): warning C4820: '_CHANGER_SET_POSITION' : '3' octets de remplissage ajoutés après données membres '_CHANGER_SET_POSITION::Flip'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(4496): warning C4820: '_CHANGER_EXCHANGE_MEDIUM' : '2' octets de remplissage ajoutés après données membres '_CHANGER_EXCHANGE_MEDIUM::Flip2'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(4528): warning C4820: '_CHANGER_MOVE_MEDIUM' : '3' octets de remplissage ajoutés après données membres '_CHANGER_MOVE_MEDIUM::Flip'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(4962): warning C4820: '_PATHNAME_BUFFER' : '2' octets de remplissage ajoutés après données membres '_PATHNAME_BUFFER::Name'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5073): warning C4820: '<unnamed-tag>' : '7' octets de remplissage ajoutés après données membres '<unnamed-tag>::Buffer'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5092): warning C4820: 'RETRIEVAL_POINTERS_BUFFER' : '4' octets de remplissage ajoutés après données membres 'RETRIEVAL_POINTERS_BUFFER::ExtentCount'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5120): warning C4820: '<unnamed-tag>' : '3' octets de remplissage ajoutés après données membres '<unnamed-tag>::FileRecordBuffer'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5133): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::FileHandle'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5137): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::ClusterCount'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5142): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::FileHandle'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5181): warning C4820: '<unnamed-tag>' : '2' octets de remplissage ajoutés après données membres '<unnamed-tag>::FileName'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5212): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::MaxMajorVersion'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5281): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::MaxMajorVersion'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5345): warning C4820: '<unnamed-tag>' : '2' octets de remplissage ajoutés après données membres '<unnamed-tag>::FileName'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5364): warning C4820: '<unnamed-tag>' : '2' octets de remplissage ajoutés après données membres '<unnamed-tag>::FileName'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5455): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::MaxSupportedMajorVersion'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5492): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::DeleteFlags'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5677): warning C4820: '_FILE_PREFETCH_EX' : '4' octets de remplissage ajoutés après données membres '_FILE_PREFETCH_EX::Context'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5787): warning C4820: '_NTFS_STATISTICS' : '2' octets de remplissage ajoutés après données membres '_NTFS_STATISTICS::MftWritesUserRequest'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5800): warning C4820: '_NTFS_STATISTICS' : '2' octets de remplissage ajoutés après données membres '_NTFS_STATISTICS::Mft2WritesUserRequest'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(5836): warning C4820: '_NTFS_STATISTICS' : '2' octets de remplissage ajoutés après données membres '_NTFS_STATISTICS::MftBitmapWritesUserLevel'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6006): warning C4820: '_ENCRYPTION_BUFFER' : '3' octets de remplissage ajoutés après données membres '_ENCRYPTION_BUFFER::Private'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6046): warning C4820: '_REQUEST_RAW_ENCRYPTED_DATA' : '4' octets de remplissage ajoutés après données membres '_REQUEST_RAW_ENCRYPTED_DATA::Length'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6272): warning C4820: '_SI_COPYFILE' : '2' octets de remplissage ajoutés après données membres '_SI_COPYFILE::FileNameBuffer'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6309): warning C4820: '_FILE_QUERY_SPARING_BUFFER' : '3' octets de remplissage ajoutés après données membres '_FILE_QUERY_SPARING_BUFFER::SoftwareSparing'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6325): warning C4820: '_FILE_QUERY_ON_DISK_VOL_INFO_BUFFER' : '4' octets de remplissage ajoutés après données membres '_FILE_QUERY_ON_DISK_VOL_INFO_BUFFER::FsFormatName'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6405): warning C4820: '_FILE_INITIATE_REPAIR_OUTPUT_BUFFER' : '4' octets de remplissage ajoutés après données membres '_FILE_INITIATE_REPAIR_OUTPUT_BUFFER::Status'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6424): warning C4820: '_SHRINK_VOLUME_INFORMATION' : '4' octets de remplissage ajoutés après données membres '_SHRINK_VOLUME_INFORMATION::ShrinkRequestType'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6552): warning C4820: '_TXFS_MODIFY_RM' : '6' octets de remplissage ajoutés après données membres '_TXFS_MODIFY_RM::LoggingMode'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6613): warning C4820: '_TXFS_QUERY_RM_INFORMATION' : '4' octets de remplissage ajoutés après données membres '_TXFS_QUERY_RM_INFORMATION::BytesRequired'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6765): warning C4820: '_TXFS_QUERY_RM_INFORMATION' : '4' octets de remplissage ajoutés après données membres '_TXFS_QUERY_RM_INFORMATION::TmLogPathOffset'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6786): warning C4820: '_TXFS_ROLLFORWARD_REDO_INFORMATION' : '4' octets de remplissage ajoutés après données membres '_TXFS_ROLLFORWARD_REDO_INFORMATION::Flags'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6859): warning C4820: '_TXFS_START_RM_INFORMATION' : '4' octets de remplissage ajoutés après données membres '_TXFS_START_RM_INFORMATION::Flags'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6930): warning C4820: '_TXFS_START_RM_INFORMATION' : '2' octets de remplissage ajoutés après données membres '_TXFS_START_RM_INFORMATION::LogPath'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(6975): warning C4820: '_TXFS_GET_METADATA_INFO_OUT' : '4' octets de remplissage ajoutés après données membres '_TXFS_GET_METADATA_INFO_OUT::TransactionState'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(7016): warning C4820: '_TXFS_LIST_TRANSACTION_LOCKED_FILES_ENTRY' : '4' octets de remplissage ajoutés après données membres '_TXFS_LIST_TRANSACTION_LOCKED_FILES_ENTRY::NameFlags'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(7031): warning C4820: '_TXFS_LIST_TRANSACTION_LOCKED_FILES_ENTRY' : '6' octets de remplissage ajoutés après données membres '_TXFS_LIST_TRANSACTION_LOCKED_FILES_ENTRY::FileName'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(7089): warning C4820: '_TXFS_LIST_TRANSACTIONS_ENTRY' : '4' octets de remplissage ajoutés après données membres '_TXFS_LIST_TRANSACTIONS_ENTRY::Reserved2'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(7206): warning C4820: '_TXFS_GET_TRANSACTED_VERSION' : '2' octets de remplissage ajoutés après données membres '_TXFS_GET_TRANSACTED_VERSION::LatestMiniVersion'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(7304): warning C4820: '_TXFS_CREATE_MINIVERSION_INFO' : '2' octets de remplissage ajoutés après données membres '_TXFS_CREATE_MINIVERSION_INFO::MiniVersion'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(7345): warning C4820: '_BOOT_AREA_INFO' : '4' octets de remplissage ajoutés après données membres '_BOOT_AREA_INFO::BootSectorCount'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(7517): warning C4820: '_REQUEST_OPLOCK_OUTPUT_BUFFER' : '2' octets de remplissage ajoutés après données membres '_REQUEST_OPLOCK_OUTPUT_BUFFER::ShareMode'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(7787): warning C4820: '_SD_ENUM_SDS_ENTRY' : '3' octets de remplissage ajoutés après données membres '_SD_ENUM_SDS_ENTRY::Descriptor'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(7973): warning C4820: '_LOOKUP_STREAM_FROM_CLUSTER_ENTRY' : '6' octets de remplissage ajoutés après données membres '_LOOKUP_STREAM_FROM_CLUSTER_ENTRY::FileName'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(8042): warning C4820: '_CSV_NAMESPACE_INFO' : '4' octets de remplissage ajoutés après données membres '_CSV_NAMESPACE_INFO::SectorSize'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(8067): warning C4820: '_CSV_CONTROL_PARAM' : '4' octets de remplissage ajoutés après données membres '_CSV_CONTROL_PARAM::Operation'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(8077): warning C4820: '_CSV_QUERY_REDIRECT_STATE' : '3' octets de remplissage ajoutés après données membres '_CSV_QUERY_REDIRECT_STATE::FileRedirected'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(8156): warning C4820: '_CSV_QUERY_MDS_PATH' : '2' octets de remplissage ajoutés après données membres '_CSV_QUERY_MDS_PATH::Path'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(8174): warning C4820: '_CSV_QUERY_VOLUME_REDIRECT_STATE' : '2' octets de remplissage ajoutés après données membres '_CSV_QUERY_VOLUME_REDIRECT_STATE::ClusterEnableDirectIo'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(8548): warning C4820: '_FILE_LAYOUT_NAME_ENTRY' : '6' octets de remplissage ajoutés après données membres '_FILE_LAYOUT_NAME_ENTRY::FileName'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(8561): warning C4820: '_FILE_LAYOUT_INFO_ENTRY::<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '_FILE_LAYOUT_INFO_ENTRY::FileAttributes'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(8660): warning C4820: '_STREAM_LAYOUT_ENTRY' : '6' octets de remplissage ajoutés après données membres '_STREAM_LAYOUT_ENTRY::StreamIdentifier'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(8692): warning C4820: '_STREAM_EXTENT_ENTRY' : '4' octets de remplissage ajoutés après données membres '_STREAM_EXTENT_ENTRY::Flags'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(8795): warning C4820: '_DEDUP_QUERY_FILE_HASHES_INPUT_BUFFER' : '4' octets de remplissage ajoutés après données membres '_DEDUP_QUERY_FILE_HASHES_INPUT_BUFFER::HashAlgorithm'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(8802): warning C4820: '_DEDUP_CHUNK_INFORMATION_HASH32' : '4' octets de remplissage ajoutés après données membres '_DEDUP_CHUNK_INFORMATION_HASH32::ChunkFlags'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(8898): warning C4820: '_FILE_REGION_INPUT' : '4' octets de remplissage ajoutés après données membres '_FILE_REGION_INPUT::DesiredUsage'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(8991): warning C4820: '_FILE_STORAGE_TIER' : '4' octets de remplissage ajoutés après données membres '_FILE_STORAGE_TIER::MediaType'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(9046): warning C4820: '_FSCTL_QUERY_STORAGE_CLASSES_OUTPUT' : '4' octets de remplissage ajoutés après données membres '_FSCTL_QUERY_STORAGE_CLASSES_OUTPUT::NumberOfTiersReturned'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(9152): warning C4820: '_WIM_PROVIDER_EXTERNAL_INFO' : '4' octets de remplissage ajoutés après données membres '_WIM_PROVIDER_EXTERNAL_INFO::ResourceHash'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(9186): warning C4820: '_WIM_PROVIDER_OVERLAY_ENTRY' : '4' octets de remplissage ajoutés après données membres '_WIM_PROVIDER_OVERLAY_ENTRY::NextEntryOffset'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(9242): warning C4820: '_DISK_EXTENT' : '4' octets de remplissage ajoutés après données membres '_DISK_EXTENT::DiskNumber'
+c:\program files (x86)\windows kits\8.1\include\um\winioctl.h(9254): warning C4820: '_VOLUME_DISK_EXTENTS' : '4' octets de remplissage ajoutés après données membres '_VOLUME_DISK_EXTENTS::NumberOfDiskExtents'
+c:\program files (x86)\windows kits\8.1\include\shared\winsmcrd.h(292): warning C4820: '<unnamed-tag>' : '1' octets de remplissage ajoutés après données membres '<alignment member>'
+c:\program files (x86)\windows kits\8.1\include\um\winspool.h(692): warning C4820: '_DRIVER_INFO_6A' : '4' octets de remplissage ajoutés après données membres '_DRIVER_INFO_6A::ftDriverDate'
+c:\program files (x86)\windows kits\8.1\include\um\winspool.h(711): warning C4820: '_DRIVER_INFO_6W' : '4' octets de remplissage ajoutés après données membres '_DRIVER_INFO_6W::ftDriverDate'
+c:\program files (x86)\windows kits\8.1\include\um\winspool.h(754): warning C4820: '_DRIVER_INFO_8A' : '4' octets de remplissage ajoutés après données membres '_DRIVER_INFO_8A::ftDriverDate'
+c:\program files (x86)\windows kits\8.1\include\um\winspool.h(781): warning C4820: '_DRIVER_INFO_8W' : '4' octets de remplissage ajoutés après données membres '_DRIVER_INFO_8W::ftDriverDate'
+c:\program files (x86)\windows kits\8.1\include\um\winspool.h(888): warning C4820: '_FORM_INFO_2A' : '2' octets de remplissage ajoutés après données membres '_FORM_INFO_2A::wLangId'
+c:\program files (x86)\windows kits\8.1\include\um\winspool.h(900): warning C4820: '_FORM_INFO_2W' : '2' octets de remplissage ajoutés après données membres '_FORM_INFO_2W::wLangId'
+c:\program files (x86)\windows kits\8.1\include\um\winspool.h(3528): warning C4820: '_CORE_PRINTER_DRIVERA' : '4' octets de remplissage ajoutés après données membres '_CORE_PRINTER_DRIVERA::szPackageID'
+c:\program files (x86)\windows kits\8.1\include\um\winspool.h(3692): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::ePropertyType'
+c:\program files (x86)\windows kits\8.1\include\um\winspool.h(3699): warning C4820: '<unnamed-tag>' : '4' octets de remplissage ajoutés après données membres '<unnamed-tag>::propertyName'
+c:\program files (x86)\windows kits\8.1\include\um\objidl.h(9942): warning C4820: 'tagRemSNB' : '2' octets de remplissage ajoutés après données membres 'tagRemSNB::rgString'
+c:\program files (x86)\windows kits\8.1\include\um\objidl.h(10803): warning C4820: 'tagDVTARGETDEVICE' : '3' octets de remplissage ajoutés après données membres 'tagDVTARGETDEVICE::tdData'
+c:\program files (x86)\windows kits\8.1\include\um\objidl.h(10811): warning C4820: 'tagFORMATETC' : '2' octets de remplissage ajoutés après données membres 'tagFORMATETC::cfFormat'
+c:\program files (x86)\windows kits\8.1\include\um\objidl.h(11214): warning C4820: 'tagRemSTGMEDIUM' : '3' octets de remplissage ajoutés après données membres 'tagRemSTGMEDIUM::data'
+c:\program files (x86)\windows kits\8.1\include\um\objidl.h(12556): warning C4820: 'tagINTERFACEINFO' : '2' octets de remplissage ajoutés après données membres 'tagINTERFACEINFO::wMethod'
+c:\program files (x86)\windows kits\8.1\include\um\oaidl.h(639): warning C4820: 'tagTYPEDESC' : '2' octets de remplissage ajoutés après données membres 'tagTYPEDESC::vt'
+c:\program files (x86)\windows kits\8.1\include\um\oaidl.h(645): warning C4820: 'tagARRAYDESC' : '2' octets de remplissage ajoutés après données membres 'tagARRAYDESC::cDims'
+c:\program files (x86)\windows kits\8.1\include\um\oaidl.h(651): warning C4820: 'tagPARAMDESCEX' : '4' octets de remplissage ajoutés après données membres 'tagPARAMDESCEX::cBytes'
+c:\program files (x86)\windows kits\8.1\include\um\oaidl.h(660): warning C4820: 'tagPARAMDESC' : '2' octets de remplissage ajoutés après données membres 'tagPARAMDESC::wParamFlags'
+c:\program files (x86)\windows kits\8.1\include\um\oaidl.h(684): warning C4820: 'tagIDLDESC' : '2' octets de remplissage ajoutés après données membres 'tagIDLDESC::wIDLFlags'
+c:\program files (x86)\windows kits\8.1\include\um\oaidl.h(833): warning C4820: 'tagFUNCDESC' : '2' octets de remplissage ajoutés après données membres 'tagFUNCDESC::wFuncFlags'
+c:\program files (x86)\windows kits\8.1\include\um\oaidl.h(865): warning C4820: 'tagVARDESC' : '2' octets de remplissage ajoutés après données membres 'tagVARDESC::wVarFlags'
+c:\program files (x86)\windows kits\8.1\include\um\oaidl.h(3652): warning C4820: 'tagTLIBATTR' : '2' octets de remplissage ajoutés après données membres 'tagTLIBATTR::wLibFlags'
+c:\program files (x86)\windows kits\8.1\include\um\propidl.h(536): warning C4820: 'tagSTATPROPSTG' : '2' octets de remplissage ajoutés après données membres 'tagSTATPROPSTG::vt'
+c:\program files (x86)\windows kits\8.1\include\um\propidl.h(1238): warning C4820: 'tagSERIALIZEDPROPERTYVALUE' : '3' octets de remplissage ajoutés après données membres 'tagSERIALIZEDPROPERTYVALUE::rgb'
+c:\program files (x86)\windows kits\8.1\include\um\oleauto.h(1206): warning C4820: 'tagPARAMDATA' : '2' octets de remplissage ajoutés après données membres 'tagPARAMDATA::vt'
+c:\program files (x86)\windows kits\8.1\include\um\winsvc.h(467): warning C4820: '_SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM::<unnamed-tag>' : '3' octets de remplissage ajoutés après données membres '_SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM::<unnamed-tag>::Data'
+c:\program files (x86)\windows kits\8.1\include\um\winsvc.h(657): warning C4820: '_SERVICE_PREFERRED_NODE_INFO' : '1' octets de remplissage ajoutés après données membres '_SERVICE_PREFERRED_NODE_INFO::fDelete'
+c:\program files (x86)\windows kits\8.1\include\um\mcx.h(43): warning C4820: '_MODEMDEVCAPS' : '3' octets de remplissage ajoutés après données membres '_MODEMDEVCAPS::abVariablePortion'
+c:\program files (x86)\windows kits\8.1\include\um\mcx.h(64): warning C4820: '_MODEMSETTINGS' : '3' octets de remplissage ajoutés après données membres '_MODEMSETTINGS::abVariablePortion'
+c:\program files (x86)\windows kits\8.1\include\um\ocidl.h(1425): warning C4820: 'tagCONTROLINFO' : '2' octets de remplissage ajoutés après données membres 'tagCONTROLINFO::cAccel'
+c:\program files (x86)\windows kits\8.1\include\um\ocidl.h(3209): warning C4917: 'OLE_HANDLE' : un GUID ne peut être associé qu'à une classe, une interface ou un espace de noms
+c:\program files (x86)\windows kits\8.1\include\um\ocidl.h(3211): warning C4917: 'OLE_XPOS_HIMETRIC' : un GUID ne peut être associé qu'à une classe, une interface ou un espace de noms
+c:\program files (x86)\windows kits\8.1\include\um\ocidl.h(3213): warning C4917: 'OLE_YPOS_HIMETRIC' : un GUID ne peut être associé qu'à une classe, une interface ou un espace de noms
+c:\program files (x86)\windows kits\8.1\include\um\ocidl.h(3215): warning C4917: 'OLE_XSIZE_HIMETRIC' : un GUID ne peut être associé qu'à une classe, une interface ou un espace de noms
+c:\program files (x86)\windows kits\8.1\include\um\ocidl.h(3217): warning C4917: 'OLE_YSIZE_HIMETRIC' : un GUID ne peut être associé qu'à une classe, une interface ou un espace de noms
+c:\program files (x86)\windows kits\8.1\include\um\ocidl.h(6463): warning C4917: 'OLE_COLOR' : un GUID ne peut être associé qu'à une classe, une interface ou un espace de noms
+c:\program files (x86)\windows kits\8.1\include\shared\dxgi.h(174): warning C4820: 'DXGI_FRAME_STATISTICS' : '4' octets de remplissage ajoutés après données membres 'DXGI_FRAME_STATISTICS::SyncRefreshCount'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1115): warning C4820: 'D3D11_SO_DECLARATION_ENTRY' : '1' octets de remplissage ajoutés après données membres 'D3D11_SO_DECLARATION_ENTRY::OutputSlot'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1330): warning C4365: '=' : conversion de 'LONG' en 'UINT', incompatibilité signed/unsigned
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1331): warning C4365: '=' : conversion de 'LONG' en 'UINT', incompatibilité signed/unsigned
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1332): warning C4365: '=' : conversion de 'LONG' en 'UINT', incompatibilité signed/unsigned
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1333): warning C4365: '=' : conversion de 'LONG' en 'UINT', incompatibilité signed/unsigned
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1334): warning C4365: '=' : conversion de 'LONG' en 'UINT', incompatibilité signed/unsigned
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1335): warning C4365: '=' : conversion de 'LONG' en 'UINT', incompatibilité signed/unsigned
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1546): warning C4820: 'D3D11_DEPTH_STENCIL_DESC' : '2' octets de remplissage ajoutés après données membres 'D3D11_DEPTH_STENCIL_DESC::StencilWriteMask'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1793): warning C4820: 'D3D11_RENDER_TARGET_BLEND_DESC' : '3' octets de remplissage ajoutés après données membres 'D3D11_RENDER_TARGET_BLEND_DESC::RenderTargetWriteMask'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3466): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3466): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3466): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3466): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_TEXTURE2D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_TEXTURE2DARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_TEXTURE2DMS' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_TEXTURE2DMSARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_TEXTURECUBE' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_TEXTURECUBEARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_BUFFEREX' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_TEXTURE2D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_TEXTURE2DARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_TEXTURE2DMS' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_TEXTURE2DMSARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_TEXTURECUBE' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_TEXTURE2D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_TEXTURE2DARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_TEXTURE2DMS' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_TEXTURE2DMSARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_TEXTURECUBE' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_TEXTURECUBEARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_TEXTURE2D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_TEXTURE2DARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_TEXTURE2DMS' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_TEXTURE2DMSARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_TEXTURECUBE' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_TEXTURECUBEARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3514): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_BUFFEREX' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_TEXTURE1D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_TEXTURE1DARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D_SRV_DIMENSION_BUFFEREX' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_TEXTURE1D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_TEXTURE1DARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D10_SRV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_TEXTURE1D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_TEXTURE1DARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D10_1_SRV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_TEXTURE1D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_TEXTURE1DARRAY' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3575): warning C4061: l'énumérateur 'D3D11_SRV_DIMENSION_BUFFEREX' dans le switch de l'enum 'D3D_SRV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3dcommon.h(288): note: voir la déclaration de 'D3D_SRV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3867): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3909): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3909): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3909): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2D' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3909): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2DARRAY' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3909): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2DMS' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3909): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2DMSARRAY' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3909): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3948): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3948): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3948): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE1D' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3948): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE1DARRAY' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(3948): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4157): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4157): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE1D' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4157): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE1DARRAY' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4157): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2D' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4157): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2DARRAY' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4157): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2DMS' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4157): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2DMSARRAY' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4157): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4186): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4186): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4186): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2D' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4186): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2DARRAY' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4186): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2DMS' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4186): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2DMSARRAY' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4186): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4220): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4220): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4220): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE1D' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4220): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE1DARRAY' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4220): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4249): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4249): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4249): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE1D' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4249): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE1DARRAY' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4249): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2D' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4249): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2DARRAY' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4249): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2DMS' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4249): warning C4061: l'énumérateur 'D3D11_RTV_DIMENSION_TEXTURE2DMSARRAY' dans le switch de l'enum 'D3D11_RTV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1164): note: voir la déclaration de 'D3D11_RTV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4367): warning C4061: l'énumérateur 'D3D11_DSV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D11_DSV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1152): note: voir la déclaration de 'D3D11_DSV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4400): warning C4061: l'énumérateur 'D3D11_DSV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D11_DSV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1152): note: voir la déclaration de 'D3D11_DSV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4400): warning C4061: l'énumérateur 'D3D11_DSV_DIMENSION_TEXTURE2D' dans le switch de l'enum 'D3D11_DSV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1152): note: voir la déclaration de 'D3D11_DSV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4400): warning C4061: l'énumérateur 'D3D11_DSV_DIMENSION_TEXTURE2DARRAY' dans le switch de l'enum 'D3D11_DSV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1152): note: voir la déclaration de 'D3D11_DSV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4400): warning C4061: l'énumérateur 'D3D11_DSV_DIMENSION_TEXTURE2DMS' dans le switch de l'enum 'D3D11_DSV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1152): note: voir la déclaration de 'D3D11_DSV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4400): warning C4061: l'énumérateur 'D3D11_DSV_DIMENSION_TEXTURE2DMSARRAY' dans le switch de l'enum 'D3D11_DSV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1152): note: voir la déclaration de 'D3D11_DSV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4441): warning C4061: l'énumérateur 'D3D11_DSV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D11_DSV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1152): note: voir la déclaration de 'D3D11_DSV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4441): warning C4061: l'énumérateur 'D3D11_DSV_DIMENSION_TEXTURE1D' dans le switch de l'enum 'D3D11_DSV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1152): note: voir la déclaration de 'D3D11_DSV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4441): warning C4061: l'énumérateur 'D3D11_DSV_DIMENSION_TEXTURE1DARRAY' dans le switch de l'enum 'D3D11_DSV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1152): note: voir la déclaration de 'D3D11_DSV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4699): warning C4061: l'énumérateur 'D3D11_UAV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D11_UAV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1178): note: voir la déclaration de 'D3D11_UAV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4743): warning C4061: l'énumérateur 'D3D11_UAV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D11_UAV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1178): note: voir la déclaration de 'D3D11_UAV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4743): warning C4061: l'énumérateur 'D3D11_UAV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D11_UAV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1178): note: voir la déclaration de 'D3D11_UAV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4743): warning C4061: l'énumérateur 'D3D11_UAV_DIMENSION_TEXTURE2D' dans le switch de l'enum 'D3D11_UAV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1178): note: voir la déclaration de 'D3D11_UAV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4743): warning C4061: l'énumérateur 'D3D11_UAV_DIMENSION_TEXTURE2DARRAY' dans le switch de l'enum 'D3D11_UAV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1178): note: voir la déclaration de 'D3D11_UAV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4743): warning C4061: l'énumérateur 'D3D11_UAV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D11_UAV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1178): note: voir la déclaration de 'D3D11_UAV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4774): warning C4061: l'énumérateur 'D3D11_UAV_DIMENSION_UNKNOWN' dans le switch de l'enum 'D3D11_UAV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1178): note: voir la déclaration de 'D3D11_UAV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4774): warning C4061: l'énumérateur 'D3D11_UAV_DIMENSION_BUFFER' dans le switch de l'enum 'D3D11_UAV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1178): note: voir la déclaration de 'D3D11_UAV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4774): warning C4061: l'énumérateur 'D3D11_UAV_DIMENSION_TEXTURE1D' dans le switch de l'enum 'D3D11_UAV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1178): note: voir la déclaration de 'D3D11_UAV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4774): warning C4061: l'énumérateur 'D3D11_UAV_DIMENSION_TEXTURE1DARRAY' dans le switch de l'enum 'D3D11_UAV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1178): note: voir la déclaration de 'D3D11_UAV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(4774): warning C4061: l'énumérateur 'D3D11_UAV_DIMENSION_TEXTURE3D' dans le switch de l'enum 'D3D11_UAV_DIMENSION' n'est pas géré explicitement par une étiquette case
+  c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(1178): note: voir la déclaration de 'D3D11_UAV_DIMENSION'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(6571): warning C4820: 'D3D11_QUERY_DATA_TIMESTAMP_DISJOINT' : '4' octets de remplissage ajoutés après données membres 'D3D11_QUERY_DATA_TIMESTAMP_DISJOINT::Disjoint'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(6641): warning C4820: 'D3D11_COUNTER_INFO' : '3' octets de remplissage ajoutés après données membres 'D3D11_COUNTER_INFO::NumDetectableParallelUnits'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11.h(9994): warning C4820: 'D3D11_VIDEO_CONTENT_PROTECTION_CAPS' : '4' octets de remplissage ajoutés après données membres 'D3D11_VIDEO_CONTENT_PROTECTION_CAPS::BlockAlignmentSize'
+c:\program files (x86)\windows kits\8.1\include\um\d3d10.h(682): warning C4820: 'D3D10_SO_DECLARATION_ENTRY' : '1' octets de remplissage ajoutés après données membres 'D3D10_SO_DECLARATION_ENTRY::OutputSlot'
+c:\program files (x86)\windows kits\8.1\include\um\d3d10.h(1007): warning C4820: 'D3D10_DEPTH_STENCIL_DESC' : '2' octets de remplissage ajoutés après données membres 'D3D10_DEPTH_STENCIL_DESC::StencilWriteMask'
+c:\program files (x86)\windows kits\8.1\include\um\d3d10.h(4598): warning C4820: 'D3D10_QUERY_DATA_TIMESTAMP_DISJOINT' : '4' octets de remplissage ajoutés après données membres 'D3D10_QUERY_DATA_TIMESTAMP_DISJOINT::Disjoint'
+c:\program files (x86)\windows kits\8.1\include\um\d3d10.h(4662): warning C4820: 'D3D10_COUNTER_INFO' : '3' octets de remplissage ajoutés après données membres 'D3D10_COUNTER_INFO::NumDetectableParallelUnits'
+c:\program files (x86)\windows kits\8.1\include\um\d3d10shader.h(257): warning C4820: '_D3D10_SIGNATURE_PARAMETER_DESC' : '2' octets de remplissage ajoutés après données membres '_D3D10_SIGNATURE_PARAMETER_DESC::ReadWriteMask'
+c:\program files (x86)\windows kits\8.1\include\um\d3d10_1.h(153): warning C4820: 'D3D10_RENDER_TARGET_BLEND_DESC1' : '3' octets de remplissage ajoutés après données membres 'D3D10_RENDER_TARGET_BLEND_DESC1::RenderTargetWriteMask'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11_1.h(151): warning C4820: 'D3D11_RENDER_TARGET_BLEND_DESC1' : '3' octets de remplissage ajoutés après données membres 'D3D11_RENDER_TARGET_BLEND_DESC1::RenderTargetWriteMask'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11shader.h(67): warning C4820: '_D3D11_SIGNATURE_PARAMETER_DESC' : '2' octets de remplissage ajoutés après données membres '_D3D11_SIGNATURE_PARAMETER_DESC::ReadWriteMask'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11shader.h(218): warning C4820: '_D3D11_FUNCTION_DESC' : '4' octets de remplissage ajoutés après données membres '_D3D11_FUNCTION_DESC::MinFeatureLevel'
+c:\program files (x86)\windows kits\8.1\include\um\d3d11shader.h(225): warning C4820: '_D3D11_FUNCTION_DESC' : '4' octets de remplissage ajoutés après données membres '_D3D11_FUNCTION_DESC::Has10Level9PixelShader'
+c:\program files (x86)\windows kits\8.1\include\um\directxmath.h(23): warning C4668: '_MANAGED' non défini(e) comme préprocesseur ou macro, remplacement par '0' pour '#if/#elif'
+c:\program files (x86)\windows kits\8.1\include\um\directxmath.h(23): warning C4668: '_M_CEE' non défini(e) comme préprocesseur ou macro, remplacement par '0' pour '#if/#elif'
+c:\program files (x86)\windows kits\8.1\include\um\directxmath.h(252): warning C5029: extension non standard utilisée : les attributs d'alignement en C++ s'appliquent aux variables, aux données membres et aux types de balises uniquement
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\vcruntime_exception.h(25): warning C4820: '__std_exception_data' : '3' octets de remplissage ajoutés après données membres '__std_exception_data::_DoFree'
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\iosfwd(356): warning C4365: 'return' : conversion de 'int' en 'std::char_traits<wchar_t>::int_type', incompatibilité signed/unsigned
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\iosfwd(452): warning C4365: 'return' : conversion de 'int' en 'std::char_traits<unsigned short>::int_type', incompatibilité signed/unsigned
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xmemory0(79): warning C4365: 'argument' : conversion de 'long' en 'unsigned int', incompatibilité signed/unsigned
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xmemory0(94): warning C4365: 'argument' : conversion de 'long' en 'unsigned int', incompatibilité signed/unsigned
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xmemory0(155): warning C4365: 'argument' : conversion de 'long' en 'unsigned int', incompatibilité signed/unsigned
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\vcruntime_typeinfo.h(44): warning C4820: '__std_type_info_data' : '3' octets de remplissage ajoutés après données membres '__std_type_info_data::_DecoratedName'
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\memory(875): warning C4365: 'argument' : conversion de 'std::_Atomic_integral_t' en 'LONG', incompatibilité signed/unsigned
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\memory(918): warning C4365: 'return' : conversion de 'std::_Atomic_integral_t' en 'long', incompatibilité signed/unsigned
+c:\users\fabien\documents\staffs-uni\staffs-real-time-graphics-for-games\rtgfg framework\object.h(30): warning C4820: 'ConstantBuffer' : '4' octets de remplissage ajoutés après données membres 'ConstantBuffer::eyePosW'
+c:\users\fabien\documents\staffs-uni\staffs-real-time-graphics-for-games\rtgfg framework\object.h(45): warning C4626: 'Object' : l'opérateur d'assignation a été implicitement défini comme étant supprimé
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(2166): warning C4625: 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>' : le constructeur de copie a été implicitement défini comme étant supprimé
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Object,std::default_delete<Object>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\map(74): note: voir la référence à l'instanciation de classe modèle 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Object,std::default_delete<Object>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>
+          ]
+  c:\users\fabien\documents\staffs-uni\staffs-real-time-graphics-for-games\rtgfg framework\application.h(48): note: voir la référence à l'instanciation de classe modèle 'std::map<std::string,std::unique_ptr<Object,std::default_delete<_Ty>>,std::less<_Kty>,std::allocator<std::pair<const _Kty,std::unique_ptr<_Ty,std::default_delete<_Ty>>>>>' en cours de compilation
+          with
+          [
+              _Ty=Object,
+              _Kty=std::string
+          ]
+c:\users\fabien\documents\staffs-uni\staffs-real-time-graphics-for-games\rtgfg framework\application.cpp(58): warning C4365: '=' : conversion de 'LONG' en 'UINT', incompatibilité signed/unsigned
+c:\users\fabien\documents\staffs-uni\staffs-real-time-graphics-for-games\rtgfg framework\application.cpp(59): warning C4365: '=' : conversion de 'LONG' en 'UINT', incompatibilité signed/unsigned
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\utility(271): warning C4625: 'std::pair<const char *,std::unique_ptr<Object,std::default_delete<_Ty>>>' : le constructeur de copie a été implicitement défini comme étant supprimé
+          with
+          [
+              _Ty=Object
+          ]
+  c:\users\fabien\documents\staffs-uni\staffs-real-time-graphics-for-games\rtgfg framework\application.cpp(69): note: voir la référence à l'instanciation de classe modèle 'std::pair<const char *,std::unique_ptr<Object,std::default_delete<_Ty>>>' en cours de compilation
+          with
+          [
+              _Ty=Object
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\utility(271): warning C4625: 'std::pair<const _Kty,_Ty>' : le constructeur de copie a été implicitement défini comme étant supprimé
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Object,std::default_delete<Object>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\type_traits(679): note: voir la référence à l'instanciation de classe modèle 'std::pair<const _Kty,_Ty>' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Object,std::default_delete<Object>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\map(198): note: voir la référence à l'instanciation de classe modèle 'std::is_constructible<std::pair<const _Kty,_Ty>,_Valty>' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Object,std::default_delete<Object>>,
+              _Valty=std::pair<const char *,std::unique_ptr<Object,std::default_delete<Object>>>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\utility(271): warning C4820: 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>' : '3' octets de remplissage ajoutés après données membres 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>::second'
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>
+          ]
+  c:\users\fabien\documents\staffs-uni\staffs-real-time-graphics-for-games\rtgfg framework\application.cpp(69): note: voir la référence à l'instanciation de classe modèle 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(444): warning C4820: 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>' : '2' octets de remplissage ajoutés après données membres 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>::_Isnil'
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(2038): note: voir la référence à l'instanciation de classe modèle 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(2037): note: pendant la compilation de la fonction membre '<Inconnu>' (classe <Inconnu>)
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(992): note: voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *&std::_Tree<std::_Tmap_traits<_Kty,std::unique_ptr<Object,std::default_delete<Object>>,_Pr,_Alloc,false>>::_Lmost(void) const' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,
+              _Kty=std::string,
+              _Pr=std::less<std::string>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\map(74): note: voir la référence à l'instanciation de classe modèle 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Object,std::default_delete<Object>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>
+          ]
+  c:\users\fabien\documents\staffs-uni\staffs-real-time-graphics-for-games\rtgfg framework\application.h(48): note: voir la référence à l'instanciation de classe modèle 'std::map<std::string,std::unique_ptr<Object,std::default_delete<_Ty>>,std::less<_Kty>,std::allocator<std::pair<const _Kty,std::unique_ptr<_Ty,std::default_delete<_Ty>>>>>' en cours de compilation
+          with
+          [
+              _Ty=Object,
+              _Kty=std::string
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(448): warning C4625: 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>' : le constructeur de copie a été implicitement défini comme étant supprimé
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(614): warning C4571: Informations : la sémantique catch(...) a changé depuis Visual C++ 7.1 ; les exceptions structurées (SEH) ne sont plus interceptées
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(610): note: pendant la compilation de la fonction membre '<Inconnu>' (classe <Inconnu>)
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(576): note: voir la référence à l'instanciation de la fonction modèle 'void std::_Tree_comp_alloc<_Traits>::_Construct(void)' en cours de compilation
+          with
+          [
+              _Traits=std::_Tmap_traits<std::string,std::unique_ptr<Object,std::default_delete<Object>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,false>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(841): note: voir la référence à l'instanciation de classe modèle 'std::_Tree_comp_alloc<_Traits>' en cours de compilation
+          with
+          [
+              _Traits=std::_Tmap_traits<std::string,std::unique_ptr<Object,std::default_delete<Object>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,false>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(718): warning C4571: Informations : la sémantique catch(...) a changé depuis Visual C++ 7.1 ; les exceptions structurées (SEH) ne sont plus interceptées
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(710): note: pendant la compilation de la fonction membre '<Inconnu>' (classe <Inconnu>)
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(611): note: voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_comp_alloc<_Traits>::_Buyheadnode(void)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,
+              _Traits=std::_Tmap_traits<std::string,std::unique_ptr<Object,std::default_delete<Object>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,false>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\tuple(188): warning C4625: 'std::_Tuple_val<_This>' : le constructeur de copie a été implicitement défini comme étant supprimé
+          with
+          [
+              _This=std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\tuple(673): note: voir la référence à l'instanciation de classe modèle 'std::_Tuple_val<_This>' en cours de compilation
+          with
+          [
+              _This=std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\map(220): note: voir la référence à l'instanciation de classe modèle 'std::tuple<_Ty &&>' en cours de compilation
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\map(252): note: voir la référence à l'instanciation de la fonction modèle 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<std::string,std::unique_ptr<Object,std::default_delete<Object>>,std::less<_Kty>,std::allocator<_Ty>>::_Try_emplace<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,>(_Keyty &&)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Kty=std::string,
+              _Keyty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\map(251): note: voir la référence à l'instanciation de la fonction modèle 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<std::string,std::unique_ptr<Object,std::default_delete<Object>>,std::less<_Kty>,std::allocator<_Ty>>::_Try_emplace<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,>(_Keyty &&)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Kty=std::string,
+              _Keyty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\map(187): note: voir la référence à l'instanciation de la fonction modèle 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<std::string,std::unique_ptr<Object,std::default_delete<Object>>,std::less<_Kty>,std::allocator<_Ty>>::try_emplace<>(std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Kty=std::string
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\map(187): note: voir la référence à l'instanciation de la fonction modèle 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<std::string,std::unique_ptr<Object,std::default_delete<Object>>,std::less<_Kty>,std::allocator<_Ty>>::try_emplace<>(std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Kty=std::string
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\map(186): note: pendant la compilation de la fonction membre '<Inconnu>' (classe <Inconnu>)
+  c:\users\fabien\documents\staffs-uni\staffs-real-time-graphics-for-games\rtgfg framework\application.cpp(509): note: voir la référence à l'instanciation de la fonction modèle 'std::unique_ptr<Object,std::default_delete<_Ty>> &std::map<std::string,std::unique_ptr<_Ty,std::default_delete<_Ty>>,std::less<_Kty>,std::allocator<std::pair<const _Kty,std::unique_ptr<_Ty,std::default_delete<_Ty>>>>>::operator [](std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&)' en cours de compilation
+          with
+          [
+              _Ty=Object,
+              _Kty=std::string
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\tuple(188): warning C4626: 'std::_Tuple_val<_This>' : l'opérateur d'assignation a été implicitement défini comme étant supprimé
+          with
+          [
+              _This=std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\tuple(188): warning C5027: 'std::_Tuple_val<_This>' : l'opérateur d'assignation de déplacement a été implicitement défini comme étant supprimé
+          with
+          [
+              _This=std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\tuple(674): warning C4625: 'std::tuple<_Ty &&>' : le constructeur de copie a été implicitement défini comme étant supprimé
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(774): warning C4571: Informations : la sémantique catch(...) a changé depuis Visual C++ 7.1 ; les exceptions structurées (SEH) ne sont plus interceptées
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(961): note: voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_comp_alloc<_Traits>::_Buynode<std::pair<const char *,std::unique_ptr<Object,std::default_delete<Object>>>>(std::pair<const char *,std::unique_ptr<Object,std::default_delete<Object>>> &&)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,
+              _Traits=std::_Tmap_traits<std::string,std::unique_ptr<Object,std::default_delete<Object>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,false>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(961): note: voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_comp_alloc<_Traits>::_Buynode<std::pair<const char *,std::unique_ptr<Object,std::default_delete<Object>>>>(std::pair<const char *,std::unique_ptr<Object,std::default_delete<Object>>> &&)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,
+              _Traits=std::_Tmap_traits<std::string,std::unique_ptr<Object,std::default_delete<Object>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,false>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\map(201): note: voir la référence à l'instanciation de la fonction modèle 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::_Tree<std::_Tmap_traits<_Kty,std::unique_ptr<Object,std::default_delete<Object>>,_Pr,_Alloc,false>>::emplace<std::pair<const char *,std::unique_ptr<Object,std::default_delete<Object>>>>(std::pair<const char *,std::unique_ptr<Object,std::default_delete<Object>>> &&)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Kty=std::string,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\map(201): note: voir la référence à l'instanciation de la fonction modèle 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::_Tree<std::_Tmap_traits<_Kty,std::unique_ptr<Object,std::default_delete<Object>>,_Pr,_Alloc,false>>::emplace<std::pair<const char *,std::unique_ptr<Object,std::default_delete<Object>>>>(std::pair<const char *,std::unique_ptr<Object,std::default_delete<Object>>> &&)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Kty=std::string,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>
+          ]
+  c:\users\fabien\documents\staffs-uni\staffs-real-time-graphics-for-games\rtgfg framework\application.cpp(69): note: voir la référence à l'instanciation de la fonction modèle 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<std::string,std::unique_ptr<Object,std::default_delete<Object>>,std::less<_Kty>,std::allocator<_Ty>>::insert<std::pair<const char *,std::unique_ptr<Object,std::default_delete<Object>>>,void>(_Valty &&)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Kty=std::string,
+              _Valty=std::pair<const char *,std::unique_ptr<Object,std::default_delete<Object>>>
+          ]
+  c:\users\fabien\documents\staffs-uni\staffs-real-time-graphics-for-games\rtgfg framework\application.cpp(69): note: voir la référence à l'instanciation de la fonction modèle 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<std::string,std::unique_ptr<Object,std::default_delete<Object>>,std::less<_Kty>,std::allocator<_Ty>>::insert<std::pair<const char *,std::unique_ptr<Object,std::default_delete<Object>>>,void>(_Valty &&)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Kty=std::string,
+              _Valty=std::pair<const char *,std::unique_ptr<Object,std::default_delete<Object>>>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(1772): warning C4571: Informations : la sémantique catch(...) a changé depuis Visual C++ 7.1 ; les exceptions structurées (SEH) ne sont plus interceptées
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(962): note: voir la référence à l'instanciation de la fonction modèle 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::_Tree<std::_Tmap_traits<_Kty,std::unique_ptr<Object,std::default_delete<Object>>,_Pr,_Alloc,false>>::_Insert_nohint<_Value_type&,std::_Tree_node<_Value_type,std::_Default_allocator_traits<_Alloc>::void_pointer>*>(bool,_Valty,_Nodety)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Kty=std::string,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,
+              _Value_type=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Valty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>> &,
+              _Nodety=std::_Tree_node<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>>::void_pointer> *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(962): note: voir la référence à l'instanciation de la fonction modèle 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::_Tree<std::_Tmap_traits<_Kty,std::unique_ptr<Object,std::default_delete<Object>>,_Pr,_Alloc,false>>::_Insert_nohint<_Value_type&,std::_Tree_node<_Value_type,std::_Default_allocator_traits<_Alloc>::void_pointer>*>(bool,_Valty,_Nodety)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Kty=std::string,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,
+              _Value_type=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Valty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>> &,
+              _Nodety=std::_Tree_node<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>>::void_pointer> *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(746): warning C4571: Informations : la sémantique catch(...) a changé depuis Visual C++ 7.1 ; les exceptions structurées (SEH) ne sont plus interceptées
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(738): note: pendant la compilation de la fonction membre '<Inconnu>' (classe <Inconnu>)
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(766): note: voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_comp_alloc<_Traits>::_Buynode0(void)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,
+              _Traits=std::_Tmap_traits<std::string,std::unique_ptr<Object,std::default_delete<Object>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,false>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(1697): warning C4571: Informations : la sémantique catch(...) a changé depuis Visual C++ 7.1 ; les exceptions structurées (SEH) ne sont plus interceptées
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(969): note: voir la référence à l'instanciation de la fonction modèle 'std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tmap_traits<_Kty,std::unique_ptr<Object,std::default_delete<Object>>,_Pr,_Alloc,false>>::_Insert_hint<_Value_type&,std::_Tree_node<_Value_type,std::_Default_allocator_traits<_Alloc>::void_pointer>*>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Valty,_Nodety)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Kty=std::string,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,
+              _Value_type=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Valty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>> &,
+              _Nodety=std::_Tree_node<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>>::void_pointer> *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.11.25503\include\xtree(969): note: voir la référence à l'instanciation de la fonction modèle 'std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tmap_traits<_Kty,std::unique_ptr<Object,std::default_delete<Object>>,_Pr,_Alloc,false>>::_Insert_hint<_Value_type&,std::_Tree_node<_Value_type,std::_Default_allocator_traits<_Alloc>::void_pointer>*>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Valty,_Nodety)' en cours de compilation
+          with
+          [
+              _Ty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Kty=std::string,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>,
+              _Value_type=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,
+              _Valty=std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>> &,
+              _Nodety=std::_Tree_node<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Object,std::default_delete<Object>>>>>::void_pointer> *
+          ]
+  DX11 Framework.vcxproj -> C:\Users\FABIEN\Documents\staffs-uni\Staffs-Real-Time-Graphics-For-Games\RTGFG Framework\Debug\DX11 Framework.exe
+  DX11 Framework.vcxproj -> C:\Users\FABIEN\Documents\staffs-uni\Staffs-Real-Time-Graphics-For-Games\RTGFG Framework\Debug\DX11 Framework.pdb (Full PDB)

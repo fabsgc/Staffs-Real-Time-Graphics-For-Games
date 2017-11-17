@@ -98,7 +98,7 @@ HRESULT Application::InitShadersAndInputLayout()
 
 	// Compile the vertex shader
 	ID3DBlob* pVSBlob = nullptr;
-	hr = CompileShaderFromFile(L"DX11 Framework.fx", "VS", "vs_4_0", &pVSBlob);
+	hr = CompileShaderFromFile(L"Lighting.fx", "VS", "vs_4_0", &pVSBlob);
 
 	if (FAILED(hr))
 	{
@@ -118,7 +118,7 @@ HRESULT Application::InitShadersAndInputLayout()
 
 	// Compile the pixel shader
 	ID3DBlob* pPSBlob = nullptr;
-	hr = CompileShaderFromFile(L"DX11 Framework.fx", "PS", "ps_4_0", &pPSBlob);
+	hr = CompileShaderFromFile(L"Lighting.fx", "PS", "ps_4_0", &pPSBlob);
 
 	if (FAILED(hr))
 	{
@@ -138,7 +138,8 @@ HRESULT Application::InitShadersAndInputLayout()
 	D3D11_INPUT_ELEMENT_DESC layout[] =
 	{
 		{ "POSITION", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D11_INPUT_PER_VERTEX_DATA, 0 },
-		{ "COLOR", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0, 12, D3D11_INPUT_PER_VERTEX_DATA, 0 },
+		//{ "COLOR", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0, 12, D3D11_INPUT_PER_VERTEX_DATA, 0 },
+		{ "NORMAL", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 12, D3D11_INPUT_PER_VERTEX_DATA, 0 },
 	};
 
 	UINT numElements = ARRAYSIZE(layout);
@@ -181,7 +182,7 @@ HRESULT Application::InitVertexBuffer()
 	// Create vertex buffer
 	SimpleVertex vertices[] =
 	{
-		{ XMFLOAT3(-1.0f, 1.0f, -1.0f), XMFLOAT4(0.0f, 0.0f, 1.0f, 1.0f) },
+		/*{ XMFLOAT3(-1.0f, 1.0f, -1.0f), XMFLOAT4(0.0f, 0.0f, 1.0f, 1.0f) },
 		{ XMFLOAT3(1.0f, 1.0f, -1.0f), XMFLOAT4(0.0f, 1.0f, 0.0f, 1.0f) },
 		{ XMFLOAT3(-1.0f, -1.0f, -1.0f), XMFLOAT4(0.0f, 1.0f, 1.0f, 1.0f) },
 		{ XMFLOAT3(1.0f, -1.0f, -1.0f), XMFLOAT4(1.0f, 0.0f, 0.0f, 1.0f) },
@@ -189,7 +190,17 @@ HRESULT Application::InitVertexBuffer()
 		{ XMFLOAT3(-1.0f, 1.0f, 1.0f), XMFLOAT4(0.0f, 0.0f, 1.0f, 1.0f) },
 		{ XMFLOAT3(1.0f, 1.0f, 1.0f), XMFLOAT4(0.0f, 1.0f, 0.0f, 1.0f) },
 		{ XMFLOAT3(-1.0f, -1.0f, 1.0f), XMFLOAT4(0.0f, 1.0f, 1.0f, 1.0f) },
-		{ XMFLOAT3(1.0f, -1.0f, 1.0f), XMFLOAT4(1.0f, 0.0f, 0.0f, 1.0f) }
+		{ XMFLOAT3(1.0f, -1.0f, 1.0f), XMFLOAT4(1.0f, 0.0f, 0.0f, 1.0f) },*/
+
+		{ XMFLOAT3(-1.0f, 1.0f, -1.0f), XMFLOAT3(-1.0f, 1.0f, -1.0f) },
+		{ XMFLOAT3(1.0f, 1.0f, -1.0f), XMFLOAT3(1.0f, 1.0f, -1.0f) },
+		{ XMFLOAT3(-1.0f, -1.0f, -1.0f), XMFLOAT3(-1.0f, -1.0f, -1.0f) },
+		{ XMFLOAT3(1.0f, -1.0f, -1.0f), XMFLOAT3(1.0f, -1.0f, -1.0f) },
+
+		{ XMFLOAT3(-1.0f, 1.0f, 1.0f), XMFLOAT3(-1.0f, 1.0f, 1.0f) },
+		{ XMFLOAT3(1.0f, 1.0f, 1.0f), XMFLOAT3(0.0f, 1.0f, 1.0f) },
+		{ XMFLOAT3(-1.0f, -1.0f, 1.0f), XMFLOAT3(-1.0f, -1.0f, 1.0f) },
+		{ XMFLOAT3(1.0f, -1.0f, 1.0f), XMFLOAT3(1.0f, -1.0f, 1.0f) }
 	};
 
 	D3D11_BUFFER_DESC bd;
@@ -279,7 +290,7 @@ HRESULT Application::InitWindow(HINSTANCE hInstance, int nCmdShow)
 	_hInst = hInstance;
 	RECT rc = { 0, 0, 1280, 720 };
 	AdjustWindowRect(&rc, WS_OVERLAPPEDWINDOW, FALSE);
-	_hWnd = CreateWindow(L"TutorialWindowClass", L"DX11 Framework", WS_OVERLAPPEDWINDOW,
+	_hWnd = CreateWindow(L"TutorialWindowClass", L"Lighting", WS_OVERLAPPEDWINDOW,
 		CW_USEDEFAULT, CW_USEDEFAULT, rc.right - rc.left, rc.bottom - rc.top, nullptr, nullptr, hInstance,
 		nullptr);
 	if (!_hWnd)
@@ -519,6 +530,28 @@ void Application::Draw()
 	XMMATRIX view = XMLoadFloat4x4(&_view);
 	XMMATRIX projection = XMLoadFloat4x4(&_projection);
 
+	XMFLOAT3 lightDir;
+	XMFLOAT4 ambient;
+	XMFLOAT4 diffuse;
+
+	XMFLOAT4 ambientMaterial;
+	XMFLOAT4 ambientLight;
+
+	XMFLOAT4 specularMaterial;
+	XMFLOAT4 specularLight;
+	float specularPower;
+
+	lightDir = XMFLOAT3(0.25f, 0.5f, -1.0f);
+	ambient = XMFLOAT4(0.2f, 0.2f, 0.2f, 1.0f);
+	diffuse = XMFLOAT4(1.0f, 1.0f, 1.0f, 1.0f);
+
+	ambientMaterial = XMFLOAT4(0.2f, 0.7f, 0.3f, 0.4f);
+	ambientLight = XMFLOAT4(0.2f, 0.2f, 0.2f, 0.4f);
+
+	specularMaterial = XMFLOAT4(0.8f, 0.8f, 0.8f, 1.0f);
+	specularLight = XMFLOAT4(0.5f, 0.5f, 0.5f, 1.0f);
+	specularPower = 5.0f;
+
 	//
 	// Update variables
 	//
@@ -526,6 +559,15 @@ void Application::Draw()
 
 	cb.mView = XMMatrixTranspose(view);
 	cb.mProjection = XMMatrixTranspose(projection);
+	cb.lightVecW = lightDir;
+	cb.diffuseLight = ambient;
+	cb.diffuseMaterial = diffuse;
+	cb.ambientMaterial = ambientMaterial;
+	cb.ambientLight = ambientLight;
+	cb.specularMtrl = specularMaterial;
+	cb.specularLight = specularLight;
+	cb.specularPower = specularPower;
+	cb.eyePosW = XMFLOAT3(0.05f, 5.0f, -1.0f);
 
 	for (auto it = _objects.begin(); it != _objects.end(); it++)
 	{
